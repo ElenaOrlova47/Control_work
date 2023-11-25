@@ -42,3 +42,11 @@ string[] ResultArray(string[] array)
     }
     return arrayRes;
 }
+string[] arrayFirst = CreateArray();
+Console.WriteLine();
+Console.WriteLine("Entered array: ");
+ShowArray(arrayFirst);
+Console.WriteLine();
+string[] arrayResult = ResultArray(arrayFirst);
+Console.WriteLine("Array result: ");
+ShowArray(arrayResult);
