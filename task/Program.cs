@@ -17,3 +17,28 @@ String[] CreateArray()
     }
     return array;
 }
+void ShowArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i += 1)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+string[] ResultArray(string[] array)
+{
+    int k = 0;
+    int z = 0;
+    for (int i = 0; i < array.Length; i += 1)
+    {
+        if (array[i].Length <= 3) k += 1;
+    }
+    string[] arrayRes = new string[k];
+    for (int i = 0; i < array.Length; i += 1)
+    {
+        if (array[i].Length <= 3)
+        {
+            arrayRes[z] = array[i];
+            z += 1;
+        }
+    }
+    return arrayRes;
+}
