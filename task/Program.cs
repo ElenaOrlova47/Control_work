@@ -4,3 +4,16 @@
 //[“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 //[“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 //[“Russia”, “Denmark”, “Kazan”] → []
+
+String[] CreateArray()
+{
+    Console.Write("Enter array size: ");
+    int size = Convert.ToInt32(Console.ReadLine());
+    string[] array = new string[size];
+    for (int i = 0; i < size; i += 1)
+    {
+        Console.Write($"Enter {i + 1} array element: ");
+        array[i] = Console.ReadLine();
+    }
+    return array;
+}
